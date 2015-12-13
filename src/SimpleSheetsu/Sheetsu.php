@@ -164,7 +164,7 @@ class Sheetsu
 
         if($rest['http_status'] == '201'){
 
-            return $rest['response'];
+            return true;
 
         }else{
 
@@ -187,7 +187,7 @@ class Sheetsu
 
         if($rest['http_status'] == '200'){
 
-            return $rest['response'];
+            return true;
 
         }else{
 
@@ -203,7 +203,7 @@ class Sheetsu
 
         if($rest['http_status'] == '204'){
 
-            return $rest['response'];
+            return true;
 
         }else{
 
