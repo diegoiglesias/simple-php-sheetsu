@@ -145,3 +145,6 @@ try{
 
 ##Disclaimer
 Just made this for personal use. It's not an official class and I'm not part of the Sheetsu team.
+
+##Questions, suggestions
+Twitter: [@diego_iglesias](https://twitter.com/diego_iglesias)
