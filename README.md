@@ -36,7 +36,7 @@ NOTE: If you don't want to use Composer simply download *src/SimpleSheetsu/Sheet
 use SimpleSheetsu\Sheetsu
 
 $object = new Sheetsu([
-		'apiId' => SHEETSU_API_ID
+		'apiId' => SHEETSU_API_ID,
 		'apiKey' => SHEETSU_API_KEY (optional),
 		'apiSecret' => SHEETSU_API_SECRET (optional)
 	]);
@@ -52,7 +52,7 @@ Note that HTTP Basic auth is optional.
 getSpreadsheet(<$column>, <$value>, <$fields>);
 ```
 
-Return array of all rows from spreadsheet. Optionally get results where column's value of :column equals :value.
+Return array of all rows from spreadsheet. Optionally get results where column's value of `$column` equals `$value`.
 If fields parameter is given, only those column will be returned in the row hash. Values in fields need to be comma separated.
 It's a blend of two Sheetsu's API methods: `GET /` and `GET /:column/:value`
 
@@ -133,6 +133,7 @@ Returns *true* if success. Otherwise it throws a new exception.
 
 $column = 'column1';
 $value = 'current column1 value';
+
 try{
 	$object->deleteRows($column, $value); 
 
